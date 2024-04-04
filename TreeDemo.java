@@ -69,7 +69,7 @@ class BinarySearchTree{
    with a specific value
    */
    public boolean find(Node root, int key){
-	  //implement me
+	   //recursive find if not go left. if not go right
       return false;           
    }
    
