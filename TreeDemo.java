@@ -38,7 +38,7 @@ class BinarySearchTree{
    
    
    /*
-   pre-order traversal
+   preOrderTraversal Binary tree parse
    */
    public void preOrderTraversal(Node root){
       //implement me
