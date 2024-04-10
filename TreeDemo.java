@@ -13,7 +13,7 @@ class Node{
 class BinarySearchTree{
 //new info
    Node root;
-   //hello test test
+
    
    /*
    recursive insert method
@@ -43,6 +43,11 @@ class BinarySearchTree{
    */
    public void preOrderTraversal(Node root){
       //implement me
+	   if(root!=null){ 
+System.out.print(root.value+" ");  
+preOrderTraversal(root.left); //left first then right, lets do this consistently too
+preOrderTraversal(root.rigt); //now right 
+	   }
    }
 
    
