@@ -57,6 +57,11 @@ preOrderTraversal(root.rigt); //now right
    */
    public void inOrderTraversal(Node root){
       //implement me
+	   if (root!=null){ 
+inOrderTraversal(root.left) //not the end? try again! 
+	System.out.println(root.value); 
+inOrderTraversal(root.right); 
+	   }
    }
    
    
@@ -65,7 +70,11 @@ preOrderTraversal(root.rigt); //now right
    post-order traversal
    */
    public void postOrderTraversal(Node root){
-      //implement me
+      if (root!=null){ 
+postOrderTraversal(root.left); 
+PostOrderTraversal(root.right); //now check left right -print 
+	      System.out.print(root.value); 
+      }
    }
    
    
