@@ -85,6 +85,19 @@ PostOrderTraversal(root.right); //now check left right -print
    */
    public boolean find(Node root, int key){
 	   //recursive find if not go left. if not go right
+	   if (root == null){ 
+
+	return false; 
+	   }
+	   if(root.value == key){ 
+		   return true; 
+	   }
+	   if(key<root.value){ 
+return find(root.left, key);  
+	   }
+	   else{
+return find(root.right, key);
+	   }
       return false;           
    }
    
@@ -96,6 +109,12 @@ PostOrderTraversal(root.right); //now check left right -print
    */
    public int getMin(Node root){
       //implement me
+	   if (root == null){ 
+		   return -1; 
+	   }
+	   while (root.left !=null){ 
+	root=root.left;
+	   }
    }
   
   
