@@ -115,6 +115,7 @@ return find(root.right, key);
 	   while (root.left !=null){ 
 	root=root.left;
 	   }
+	   return root.value;
    }
   
   
@@ -125,6 +126,13 @@ return find(root.right, key);
    */
    public int getMax(Node root){
 	  //implement me
+	   if (root == null){ 
+	return -1;
+	   }
+	   while (root.right !=null){ 
+	   root = root.right
+	   }
+	   return root.value;
    }
    
    
