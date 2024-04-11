@@ -47,7 +47,7 @@ Inserts a new value to the BST
 	
    
    /*
-   preOrderTraversal Binary tree parse 
+   preOrderTraversal Binary tree parse of a bst
    @param root - root node of the BST
    */
    public void preOrderTraversal(Node root){
@@ -62,7 +62,7 @@ preOrderTraversal(root.rigt); //now right
    
    
    /*
-   in-order traversal
+   in-order traversal of the binary search tree
    @param root - the root node of the BST
    */
    public void inOrderTraversal(Node root){
@@ -77,7 +77,7 @@ inOrderTraversal(root.right);
    
    
    /*
-   post-order traversal
+   post-order traversal of the BST
    @param root - root node of the BST
    */
    public void postOrderTraversal(Node root){
@@ -117,8 +117,9 @@ return find(root.right, key);
    
    
    /*
-   a method to find the node in the tree
-   with a smallest key
+   a method to find the node in the tree with a smallest key
+   @param root - the root node of the BST
+   @return the int value of the minimum node
    */
    public int getMin(Node root){
       //implement me
@@ -134,8 +135,9 @@ return find(root.right, key);
   
   
    /*
-   a method to find the node in the tree
-   with a largest key
+   a method to find the node in the tree with a largest key
+   @param root - root node of the bst 
+   @return int value of the Maximum value
    */
    public int getMax(Node root){
 	  //implement me
@@ -153,6 +155,9 @@ return find(root.right, key);
    /*
    this method will not compile until getMax
    is implemented
+   @param root - root node of the BST 
+   @param key - key value to find and delete
+   @return the root that is deleted
    */
    public Node delete(Node root, int key){
       
