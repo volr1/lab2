@@ -116,7 +116,7 @@ return find(root.right, key);
    
    
    
-   /*
+   /**
    a method to find the node in the tree with a smallest key
    @param root - the root node of the BST
    @return the int value of the minimum node
@@ -192,7 +192,9 @@ return find(root.right, key);
 }
 
 
-
+/** 
+A BSt tree with random values
+*/
 public class TreeDemo{
    public static void main(String[] args){
       BinarySearchTree t1  = new BinarySearchTree();
