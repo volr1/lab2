@@ -1,3 +1,7 @@
+
+/*
+A node in a binary tree
+*/
 class Node{
    int value;
    Node left, right;
@@ -9,14 +13,18 @@ class Node{
    }
 
 }
-
+/* 
+an entire BST
+*/
 class BinarySearchTree{
 //new info
    Node root;
 
    
    /*
-   recursive insert method
+Inserts a new value to the BST
+@param root -root of BST 
+@param value - value of the node
    */
    public Node insert(Node root, int value){
       //base case
@@ -39,7 +47,8 @@ class BinarySearchTree{
 	
    
    /*
-   preOrderTraversal Binary tree parse
+   preOrderTraversal Binary tree parse 
+   @param root - root node of the BST
    */
    public void preOrderTraversal(Node root){
       //implement me
@@ -54,6 +63,7 @@ preOrderTraversal(root.rigt); //now right
    
    /*
    in-order traversal
+   @param root - the root node of the BST
    */
    public void inOrderTraversal(Node root){
       //implement me
@@ -68,6 +78,7 @@ inOrderTraversal(root.right);
    
    /*
    post-order traversal
+   @param root - root node of the BST
    */
    public void postOrderTraversal(Node root){
       if (root!=null){ 
@@ -80,8 +91,10 @@ PostOrderTraversal(root.right); //now check left right -print
    
    
    /*
-   a method to find the node in the tree
-   with a specific value
+   a method to find the node in the tree with a specific value
+   @param root - root node of BST
+   @param key - the key value we are looking for
+   @return if the key was found in the BST
    */
    public boolean find(Node root, int key){
 	   //recursive find if not go left. if not go right
